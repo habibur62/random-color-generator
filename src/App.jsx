@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-
+      <RandomColorGenerator />
       <StarRating noOfStars={10}/>
     </>
   )
