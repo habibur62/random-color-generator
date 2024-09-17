@@ -1,0 +1,26 @@
+
+.load-more-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.product{
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 10px rgb(141, 139, 139);
+    
+    
+}
+.product img{
+    width: 100%;
+}
