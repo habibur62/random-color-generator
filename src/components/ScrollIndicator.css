@@ -1,0 +1,18 @@
+.scroll-indicator-head{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    background-color: black;
+}
+.scroll-level-container{
+    background-color: #07a719;
+    width: 100%;
+    height: 10px;
+}
+.scroll-level{
+    background-color: #fff;
+    height: 10px;
+    width: 0%;
+}
