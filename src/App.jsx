@@ -7,6 +7,7 @@ import LoadMoreData from './components/load-more-data'
 import QrCodeGenerator from './components/QrCodeGenerator'
 import LightDarkMode from './components/LightDarkMode'
 import ScrollIndicator from './components/ScrollIndicator'
+import CustomTabs from './components/DinamicTabs/tabTest'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -20,6 +21,7 @@ function App() {
       <LoadMoreData />
       <QrCodeGenerator />
       <LightDarkMode />
+      <CustomTabs />
     </>
   )
 }

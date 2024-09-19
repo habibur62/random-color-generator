@@ -1,0 +1,20 @@
+.wrapper{
+    padding: 20px;
+    background-color: rgb(41, 167, 167);
+
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.label{
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+}
+.active{
+    background-color: aliceblue;
+}
