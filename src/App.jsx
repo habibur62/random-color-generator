@@ -8,6 +8,7 @@ import QrCodeGenerator from './components/QrCodeGenerator'
 import LightDarkMode from './components/LightDarkMode'
 import ScrollIndicator from './components/ScrollIndicator'
 import CustomTabs from './components/DinamicTabs/tabTest'
+import ModalPopup from './components/custom-modal/modalTest'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -22,6 +23,7 @@ function App() {
       <QrCodeGenerator />
       <LightDarkMode />
       <CustomTabs />
+      <ModalPopup />
     </>
   )
 }
