@@ -4,7 +4,14 @@
     flex-direction: column;
     gap: 20px;
 }
-
+.search-container{
+    width: 100%;
+    background-color: azure;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
 .product-container{
     display: grid;

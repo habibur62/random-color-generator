@@ -7,7 +7,8 @@ export default function LoadMoreData() {
     const [count, setCount] = useState(0);
     const [error, setError] = useState(null);
     const [disablebutton, setDisablebutton]= useState(false);
-
+    const[filteredProduct, setFilteredProduct] = useState([]);
+    const [search, setSearch] = useState("");
     async function fetchProducts(){
         try{
             setLoading(true);
@@ -39,11 +40,24 @@ export default function LoadMoreData() {
         return <div>Loading data ! Please wait....</div>
     }
 
+    const handleproducts = (e) =>{
+        const query = e.target.value.toLowerCase();
+        setSearch(query);
+    }
+
+
   return (
     <div className='load-more-container'>
+        <div className='search-container'>
+            <input onChange={handleproducts} type="text" name='searchProduct' placeholder='Search your products...' />
+        </div>
         <div className='product-container'>
             {  products && products.length 
-             ?  products.map((item, index)=>{
+             ? 
+                products.filter((item)=>{
+                    return search.toLowerCase() === ''? item :
+                    item.title.toLowerCase().includes(search)
+                }).map((item, index)=>{
                 return(
                     <div key={index} className='product'>
                         <img src={item.thumbnail} alt="" />
@@ -55,7 +69,7 @@ export default function LoadMoreData() {
                 )
                 
               })
-                :null 
+                : null
             }
         </div>
         <div className='button-container'>
