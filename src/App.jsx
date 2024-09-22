@@ -9,6 +9,7 @@ import LightDarkMode from './components/LightDarkMode'
 import ScrollIndicator from './components/ScrollIndicator'
 import CustomTabs from './components/DinamicTabs/tabTest'
 import ModalPopup from './components/custom-modal/modalTest'
+import UseFetchHookTest from './components/use-fetch/text'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,6 +25,7 @@ function App() {
       <LightDarkMode />
       <CustomTabs />
       <ModalPopup />
+      <UseFetchHookTest />
     </>
   )
 }
